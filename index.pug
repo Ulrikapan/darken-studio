@@ -1,0 +1,114 @@
+doctype html
+html(lang='zh-TW')
+    head
+        meta(charset="UTF-8")
+        //- 相容性模式
+        meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
+        //-  相容性模式-end
+        meta(name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes")
+        
+        //- SEO
+        title Darken Studio
+        meta(name='company', content='Ulrika Pan')
+        meta(name='author', content='Ulrika Pan')
+        meta(name='copyright', content='本網頁著作權為Ulrika Pan所有, All Rights Reserved')
+        meta(name='description', content='網頁切版練習 ')
+        //- meta(name='URL' , content='file:///Users/ulrika/Desktop/psd_to_html_practice/')
+        //- SEO-end
+        
+        //- link(rel='stylesheet prefetch' href='填入cdn')
+        link(rel='stylesheet prefetch' href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700")
+        link(rel='stylesheet' href='css/bootstrap.min.css' type='text/css')
+        link(rel='stylesheet' href='css/style.css' type='text/css')
+        //- link(rel='stylesheet' href='css/reset.css' type='text/css')
+        link(rel="shortcut icon" href="favicon.ico")
+        
+        //- OG
+        meta(property='og:title', content='網頁標題')
+        meta(property='og:type', content='website')
+            //- website、article、video、music…擇一
+        meta(property='og:url', content=' http://www.example.com/')
+        meta(property='og:image', content=' http://example.com/image.jpg')
+            //- (解析須200x200至1500x1500之間，檔案大小在5MB以內)
+        meta(property='og:description', content='網頁描述')
+        meta(property='og:site_name', content='Site Name, i.e. Moz')
+        //- OG-end
+
+    body
+        header#header
+            .bg_01
+                ul.top_menu.at_top
+                    li
+                        a(href="#header") HOME
+                    li
+                        a(href="#section_portfolio") ABOUT
+                    li
+                        a(href="#footer") CONTACT
+                img.logo(src="./img/logo.png" )
+                a.btn.btn-default(href="#section_portfolio")  VIEW
+                    
+        section#section_portfolio
+            .bg_02
+                .container
+                    img.baseline(src="./img/baseline.png")
+                
+                h1 ABOUT
+                hr
+                .container
+                    .row
+                        .col-sm-12
+                            .works
+                                .work.work01
+                                .work.work02
+                                .work.work03
+                                .work.work04
+                                .work.work05
+                                .work.work06
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    |Quasi necessitatibus corporis harum, facere odio quam, quod
+                    | esse porro consectetur sequi iusto cum maxime corrupti in 
+                    |accusamus quaerat dicta eum veniam libero. Adipisci, temporibus 
+                    |repellat. Atque laudantium, assumenda.
+                a.btn.btn-default(href="#section_portfolio") MORE
+                      
+        footer#footer
+            .bg_03
+                .container
+                    img.baseline(src="./img/baseline.png")
+                .container
+                    .row
+                        .col-sm-6.left
+                            h1 CONTACT US
+                            p Address: 330 my company address
+                            p Hours: 11:00AM - 18:00PM
+                            p Tel: 33-93015-39969
+                        
+                        .col-sm-6.right
+                            .col-xs-12
+                                h1 FOLLOW US
+                                ul
+                                    li
+                                        a(href="https://www.facebook.com/" target="_blank")
+                                            img(src="./img/social_icon_01.png", alt="")
+                                    li
+                                        a(href="https://www.twitter.com/" target="_blank")
+                                            img(src="./img/social_icon_02.png", alt="")
+                                    li
+                                        a(href="https://www.instagram.com/" target="_blank")
+                                            img(src="./img/social_icon_03.png", alt="")
+                                    li
+                                         a(href="https://www.pinterest.com/" )
+                                            img(src="./img/social_icon_04.png" target="_blank", alt="")
+
+                                
+                                
+                               
+                            .col-xs-12
+                                h1 SUBSCRIBE
+                                input.email(type="text" placeholder="Enter Your Email...")
+                                input.submit(type="submit" value="Submit")
+                    
+                p.copyright copyright © 2017, PIN CHUN PAN All rights reserved.
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js')
+        script(type='text/javascript' src="./js/all.js")
+        

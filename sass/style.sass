@@ -1,0 +1,292 @@
+@charset "UTF-8"
+
+// 顏色定義變數
+$color_green: #e3d4a2
+
+// 顏色定義變數-end
+
+
+*
+    font-family: 'Poppins', 'sans-serif','微軟正黑體'
+    position: relative
+    // border: 1px solid #F36F89
+
+a
+    text-decoration: none
+    &:hover, &:visited, &:active
+        text-decoration: none
+    
+
+a.btn.btn-default
+    background-color: transparent
+    border: 2px solid $color_green
+    border-radius: 0
+    padding: 10px 35px
+    font-size: 1em
+    letter-spacing: 0.1em
+    position: absolute
+    left: 50%
+    bottom: 15%
+    transform: translateX(-50%)
+    // display: block
+    color: $color_green  
+    &:hover
+        background-color: $color_green
+        color: white
+    
+
+.baseline
+            width: 100%
+            margin-top: -35px
+h1
+    color: $color_green
+    font-size: 1.2em
+    letter-spacing: 0.05em
+    // margin-bottom: 50px
+
+#header
+    .bg_01
+        padding: 0px
+        border: none
+        margin: 0px
+        img.logo
+            left: 50%
+            top: 50%
+            transform: translate(-50%,-60%)
+            position: absolute
+            max-width: 80%
+
+        ul.top_menu
+            text-align: center
+            width: 100%
+            background-color: $color_green
+            position: fixed
+            z-index: 100
+            padding: 0px
+            transition: 0.5s
+            li
+                display: inline-block
+                padding: 15px 0px
+                cursor: pointer
+                &:hover
+                    background-color: #FFF
+                a
+                    color: white
+                    padding: 13px 20px
+                    letter-spacing: 0.1em
+                    font-size: 1.2em
+                    box-sizing: border-box
+                    &:hover
+                        background-color: white
+                        color: $color_green
+                        box-sizing: border-box
+                @media screen and (max-width: 500px)
+                    a
+                        font-size: 1em
+                        padding: 15px 10px
+
+            &.at_top
+                background-color: transparent
+                    
+.bg_01,.bg_02,.bg_03
+    width: 100%
+    background-position: center center
+    background-repeat: no-repeat
+
+.bg_01
+    height: 675px
+    background-image: url(../img/bg_01.png)
+.bg_02
+    height: 879px
+    background-image: url(../img/bg_02.png)
+.bg_03
+    height: 458px
+    background-image: url(../img/bg_03.png)
+
+#section_portfolio
+    .bg_02
+        text-align: center
+        height: 879px
+        
+        hr
+            width: 50px 
+            border: 3px solid $color_green
+        
+        p
+            color: $color_green
+            letter-spacing: 0.05em
+            padding: 10px
+            width: 500px
+            max-width: 80%
+            position: absolute
+            left: 50%
+            bottom: 150px
+            transform: translateX(-50%)
+        .btn.btn-default
+            bottom: 10%
+        .container
+            .col-sm-12
+                .works
+                    width: 100%
+                    height: 100%
+                    .work
+                        width: 150px
+                        height: 150px
+                        background-size: contain
+                        background-position: center center
+                        background-repeat: no-repeat
+                        position: absolute
+                        left: 50%
+                        transition: 0.5s
+                        cursor: pointer
+                        &:hover
+                            &.work01
+                                background-image: url(../img/works01_h.png)
+                            &.work02
+                                background-image: url(../img/works02_h.png)
+                            &.work03
+                                background-image: url(../img/works03_h.png)
+                            &.work04
+                                background-image: url(../img/works04_h.png)
+                            &.work05
+                                background-image: url(../img/works05_h.png)
+                            &.work06
+                                background-image: url(../img/works06_h.png)
+                    @media screen and (max-width: 500px)
+                        .work
+                            width: 120px
+                            height: 120px
+                    .work01
+                        background-image: url(../img/works01.png)
+                        transform: translateX(-50%)
+                    .work02
+                        background-image: url(../img/works02.png)
+                        transform: translate(-97%,80%)
+                    .work03
+                        background-image: url(../img/works03.png)
+                        transform: translate(-3%,80%)
+                    .work04
+                        background-image: url(../img/works04.png)
+                        transform: translate(-142.5%,160%)
+                    .work05
+                        background-image: url(../img/works05.png)
+                        transform: translate(-50%,160%)
+                    .work06
+                        background-image: url(../img/works06.png)
+                        transform: translate(42.5%,160%)
+                    
+footer#footer
+    .bg_03
+        text-align: center
+        .container
+            .col-sm-6.left
+                padding: 20px 0px 20px 90px
+                text-align: left
+            .col-sm-6.right
+                padding: 20px 90px 20px 0px
+            .col-sm-6
+                // padding: 20px 90px 20px 0px
+                h1
+                    padding: 0px
+                    margin: 0px 0px 10px 0px
+                p
+                    color: $color_green
+                    letter-spacing: 0.05em
+                .col-xs-12
+                    padding: 0px
+                    margin: 0px 0px 30px 0px
+                    text-align: right
+                    font-size: 0px
+                    ul
+                        list-style-type: none
+                        height: 50px
+                        padding: 0
+                        margin: 0px 0px 10px 0px
+
+                        li
+                           display: inline-block
+                           padding: 0px 5px
+                           a   
+                                display: block
+                                cursor: pointer
+                                width: 40px
+
+                                img 
+                                    position: absolute
+                                    left: 0
+                                    top: 0
+                                    border: 0px   
+                                    
+                                &:hover
+                                    img
+                                        animation: floatIcon .5s ease-in-out infinite alternate-reverse
+
+                                        @keyframes floatIcon
+                                            0%
+                                                transform: translateY(0)
+                                            100%
+                                                transform: translateY(-5px)
+
+
+                    input.email
+                        background-color: transparent
+                        border: 1px solid $color_green
+                        padding: 5px 10px
+                        margin: 0px
+                        margin-bottom: 10px
+                        color: $color_green
+                        box-sizing: border-box
+                        vertical-align: top
+                        &:focus
+                            outline: none
+                    input.submit
+                        padding: 5px 10px
+                        margin: 0px
+                        background-color: transparent
+                        border: 1px solid rgba($color_green,0)
+                        color: $color_green
+                        &:hover
+                            background-color: $color_green
+                            border: 1px solid $color_green
+                            color: white
+                        &:focus
+                            outline: none
+                    h1
+                        font-size: initial
+                        // font-size: 1.5em
+                    p,a,input,input.submit
+                        font-size: initial
+                        font-weight: 100
+                    
+
+            @media screen and (max-width: 770px)
+                .col-sm-6.left, .col-sm-6.right
+                    padding: 10px 50px 
+                    text-align: left
+                    .col-xs-12
+                        text-align: left
+            @media screen and (max-width: 500px)
+                .col-sm-6
+                    h1
+                        font-size: 1.2em
+                    p
+                        font-size: 0.6em
+        p.copyright
+            color: $color_green
+            position: absolute
+            display: block
+            width: 100%
+            // left: 50%
+            bottom: 10px
+            // transform: translateX(-50%)
+            font-style: italic
+            font-size: 12px
+
+            
+
+            
+                
+                    
+
+                    
+                    
